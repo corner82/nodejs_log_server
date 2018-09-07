@@ -1,0 +1,23 @@
+{
+   "replaceConsole": true,     
+								  
+	"appenders": [{
+		"type": "console"         
+		},
+		{		
+		"type": "logLevelFilter", 
+		"level": "ERROR",         
+		"appender": {             
+		  "type": "smtp",
+		  "recipients": "311corner82@gmail.com",
+		  "sender": "311corner82@gmail.com",
+		  "sendInterval": 60,     					  
+		  "transport": "SMTP",
+		  "SMTP": {
+			"host": "smtp.gmail.com",  
+			"port": 587
+		  }
+		}
+	  }]
+  
+}
