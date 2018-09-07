@@ -8,45 +8,47 @@ var https = require('https');
 log4js = require("log4js");
 //log4js.configure(__dirname + "/log4js.json") 
 
+var dateTime = require('node-datetime');
+var dt = dateTime.create();
+var formatted = dt.format('Y-m-d');
+
 log4js.configure({
-  appenders: {
-    email: {
-      type: '@log4js-node/smtp',
-	  //type: 'smtp',
-      transport: {
-        plugin: 'smtp',
-        options: {
-          host: 'smtp.gmail.com',
-          port: 587
-        }
-      },
-      recipients: '311corner82@gmail.com'
-    }
-  },
-  categories: {
-    default: { appenders: ['email'], level: 'info' }
-  }
+  appenders: { errLogs: { 
+				type: 'file', filename: __dirname +'/log/error/'+formatted+'_error.log' },
+			  exLogs: { 
+				type: 'file', 
+				filename: __dirname +'/log/exceptions/'+formatted+'_exceptions.log' } ,
+			  errMail: {
+				  type: '@log4js-node/smtp',
+				  recipients: '311corner82@gmail.com',
+				  sendInterval: 5,
+				  transport: 'SMTP',
+				  SMTP: {
+					host: 'smtp.gmail.com',
+					secureConnection: false,
+					port: 465,
+					//port: 587,
+					auth: {
+					  user: '311corner82@gmail',
+					  pass: 'aaal123mun82corner82'
+					},
+					debug: true
+				  }
+				}
+			  },
+
+  categories: { default: { appenders: ['errLogs','exLogs', 'errMail'], level: 'error' },
+				mailer: { appenders: ['errMail'], level: 'error' }
+				}
 });
-													 
-/*log4js.configure({
-  appenders: {
-    'email': {
-      type: '@log4js-node/smtp',
-      recipients: '311corner82@gmail.com',
-      subject: 'Latest logs',
-      sender: '311corner82@gmail.com',
-      attachment: {
-        enable: true,
-        //filename: 'latest.log',
-        message: 'See the attachment for the latest logs'
-      },
-      sendInterval: 3600
-    }
-  },
-  categories: { default: { appenders: ['email'], level: 'ERROR' } }
-});	*/											
-													 
-logger = log4js.getLogger();
+
+loggerErr = log4js.getLogger('errLogs');
+loggerExc = log4js.getLogger('exLogs');
+loggerMailer = log4js.getLogger('mailer');
+
+
+																							 
+//logger = log4js.getLogger();
 
 
 
@@ -95,7 +97,7 @@ server.listen(3000);
 //});
 
 io.sockets.on('connection', function(socket) {
-		console.log('io socket connted');
+		console.log('io socket connected');
 		
 		socket.on('error', (err) => {
 		  // If the connection is reset by the server, or if it can't
@@ -127,7 +129,7 @@ io.sockets.on('connection', function(socket) {
 	amqp.connect('amqp://localhost', function(err, conn) {
 		
 		try{ 
-			logger.error("This send you an email!");
+			//logger.error("This send you an email!");
 			conn.createChannel(function(err, ch) {
 			//var q = 'pageLogRabbit';
 			var q = 'pageActivityLogRabbit';
@@ -142,11 +144,12 @@ io.sockets.on('connection', function(socket) {
 			  });
 			
 		} catch(err) {
-			logger.error("This send you an email!");
+			//logger.error("This send you an email!");
+			loggerErr.error('this is written by log4js file appender');
+			//loggerExc.error(err);
+			//loggerMailer.error('Logging something with mail');
 			console.log(err);
 		}
-		
-		  
 		  //setTimeout(function() { conn.close(); process.exit(0) }, 500);
 		  
 		});

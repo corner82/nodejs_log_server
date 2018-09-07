@@ -1,0 +1,165 @@
+[2018-09-07T09:34:38.776] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T09:34:38.779] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:144:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T09:34:46.620] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T09:34:46.620] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:144:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T09:34:48.170] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T09:34:48.170] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:144:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T14:40:21.185] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T14:41:32.788] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T14:42:14.136] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T14:42:14.140] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:167:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:15:23
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:162:9
+    at succeed (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:274:5)
+    at onOpenOk (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:253:5)
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:166:32
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:160:12
+    at Socket.recv (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:498:12)
+    at Socket.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at emitReadable_ (_stream_readable.js:432:10)
+    at emitReadable (_stream_readable.js:426:7)
+    at readableAddChunk (_stream_readable.js:187:13)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+[2018-09-07T14:53:47.213] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T14:53:47.216] [ERROR] exLogs - TypeError: Cannot read property 'createChannel' of undefined
+    at C:\nodejs_log_server\app.js:168:8
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T14:54:10.655] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T14:54:10.655] [ERROR] exLogs - TypeError: Cannot read property 'createChannel' of undefined
+    at C:\nodejs_log_server\app.js:168:8
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T14:58:31.087] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T14:58:31.091] [ERROR] exLogs - TypeError: Cannot read property 'createChannel' of undefined
+    at C:\nodejs_log_server\app.js:168:8
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T15:06:22.157] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T15:06:22.161] [ERROR] exLogs - TypeError: Cannot read property 'createChannel' of undefined
+    at C:\nodejs_log_server\app.js:169:8
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T15:09:58.405] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T15:09:58.406] [ERROR] exLogs - TypeError: Cannot read property 'createChannel' of undefined
+    at C:\nodejs_log_server\app.js:169:8
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:16:10
+    at Socket.<anonymous> (C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:187:18)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1025:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2018-09-07T15:11:40.129] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T15:11:40.134] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:168:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:15:23
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:162:9
+    at succeed (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:274:5)
+    at onOpenOk (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:253:5)
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:166:32
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:160:12
+    at Socket.recv (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:498:12)
+    at Socket.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at emitReadable_ (_stream_readable.js:432:10)
+    at emitReadable (_stream_readable.js:426:7)
+    at readableAddChunk (_stream_readable.js:187:13)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+[2018-09-07T15:45:31.918] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T15:45:31.929] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:168:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:15:23
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:162:9
+    at succeed (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:274:5)
+    at onOpenOk (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:253:5)
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:166:32
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:160:12
+    at Socket.recv (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:498:12)
+    at Socket.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at emitReadable_ (_stream_readable.js:432:10)
+    at emitReadable (_stream_readable.js:426:7)
+    at readableAddChunk (_stream_readable.js:187:13)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+[2018-09-07T15:57:41.373] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T15:57:41.375] [ERROR] exLogs - ReferenceError: logger is not defined
+    at C:\nodejs_log_server\app.js:168:4
+    at C:\nodejs_log_server\node_modules\amqplib\callback_api.js:15:23
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connect.js:162:9
+    at succeed (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:274:5)
+    at onOpenOk (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:253:5)
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:166:32
+    at C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:160:12
+    at Socket.recv (C:\nodejs_log_server\node_modules\amqplib\lib\connection.js:498:12)
+    at Socket.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at emitReadable_ (_stream_readable.js:432:10)
+    at emitReadable (_stream_readable.js:426:7)
+    at readableAddChunk (_stream_readable.js:187:13)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+[2018-09-07T16:06:29.233] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T16:06:32.033] [ERROR] errLogs - this is written by log4js file appender
+[2018-09-07T16:06:32.790] [ERROR] errLogs - this is written by log4js file appender
