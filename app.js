@@ -29,8 +29,8 @@ log4js.configure({
 					port: 465,
 					//port: 587,
 					auth: {
-					  user: '311corner82@gmail',
-					  pass: 'aaal123mun82corner82'
+					  user: 'someone@gmail',
+					  pass: '**************'
 					},
 					debug: true
 				  }
